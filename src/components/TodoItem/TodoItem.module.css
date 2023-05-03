@@ -1,31 +1,38 @@
 .todoItem {
-	display: flex;
-	flex: 1;
-	justify-content: space-between;
-	align-items: center;
-	border: 1px dashed #888;
-	padding: 0.5rem 0.75rem;
-	gap: 1rem;
-	border-radius: 0.5rem;
-	list-style-type: none;
-	color: inherit;
-	user-select: none;
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  align-items: center;
+  border: 1px solid #888;
+  padding: 0.5rem 0.75rem;
+  gap: 1rem;
+  border-radius: 0.5rem;
+  list-style-type: none;
+  color: inherit;
+  user-select: none;
 }
 
 .done {
-	text-decoration: line-through;
+  color: #888;
+  border: 1px dashed #555;
+  text-decoration: line-through;
+  order: -2;
 }
 
 .statusImg,
 .deleteImg {
-	cursor: pointer;
+  cursor: pointer;
 }
 
 .statusImg {
-	max-height: 32px;
-	width: 35px;
+  max-height: 32px;
+  width: 35px;
 }
 
 .deleteImg {
-	max-height: 20px;
+  max-height: 20px;
+}
+
+.hiddenDoned {
+  display: none;
 }
