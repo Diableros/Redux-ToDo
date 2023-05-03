@@ -1,0 +1,39 @@
+.todoList {
+	display: flex;
+	flex-direction: column;
+	place-items: center;
+}
+
+.filterBox {
+	display: flex;
+	gap: 2rem;
+	height: 2rem;
+}
+
+.checkBox {
+	display: flex;
+	gap: 1rem;
+	align-items: center;
+	margin-bottom: 1rem;
+	cursor: pointer;
+	user-select: none;
+}
+
+.todoItemsList {
+	padding: 0;
+	margin: 0;
+	display: flex;
+	flex-direction: column-reverse;
+	width: 100%;
+	gap: 1rem;
+}
+
+.noTodos {
+	list-style-type: none;
+	font-size: 2rem;
+	margin-top: 2rem;
+}
+
+.hiddenCheckbox {
+	visibility: hidden;
+}
